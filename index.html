@@ -201,12 +201,6 @@ textarea{resize:vertical;min-height:84px}
 .q{font-size:.93rem;color:var(--fg)}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px 30px;margin-top:6px}
 
-/* rujukan */
-.refs{list-style:none;margin:0;padding:0;display:grid;gap:18px;max-width:78ch}
-.refs li{display:grid;gap:4px;padding-block:14px;border-top:1px solid var(--line)}
-.refs a{font-weight:600;overflow-wrap:anywhere}
-.refs span{color:var(--muted);font-size:.92rem}
-
 /* sheet */
 .overlay{position:fixed;inset:0;z-index:20;background:rgba(8,14,11,.55);display:grid;place-items:center;padding:calc(16px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
 .sheet{background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:12px;width:min(680px,100%);max-height:100%;overflow:auto;padding:22px;display:grid;gap:18px}
@@ -239,7 +233,6 @@ footer{border-top:1px solid var(--line);padding-top:22px;margin-top:30px;color:v
       <button class="tab" role="tab" data-tab="cari" aria-selected="false">Cari tetangga</button>
       <button class="tab" role="tab" data-tab="daftar" aria-selected="false">Profil saya</button>
       <button class="tab" role="tab" data-tab="pertemuan" aria-selected="false">Pertemuan</button>
-      <button class="tab" role="tab" data-tab="rujukan" aria-selected="false">Rujukan</button>
     </nav>
     <span class="mode" id="mode" data-s="load"><i></i><span>Menghubungkan</span></span>
   </div>
@@ -309,16 +302,8 @@ footer{border-top:1px solid var(--line);padding-top:22px;margin-top:30px;color:v
 
   <div class="sec">
     <div class="note">
-      <span class="mono">Dari catatan proses empat bulan</span>
-      <p>Dalam forum Urban Social Forum 12, Nani Susiani dari Studiotanah menceritakan bahwa setelah empat bulan bertemu langsung, kelompok ini menyimpulkan bahwa demokratisasi adalah kuncinya. Bentuknya bukan hanya dialog, tetapi juga nilai yang disusun bersama.</p>
-      <p>Menurut catatan itu, co-housing yang diinginkan tidak berhenti pada fasilitas fisik. Intinya ada pada prinsip, kesediaan berkontribusi, kemauan menyesuaikan diri dengan kebutuhan orang lain, dan latihan bertanggung jawab bersama. Karena itu aplikasi ini menanyakan kebiasaan dan kontribusi, bukan hanya anggaran dan luas lahan.</p>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="note">
       <span class="mono">Mengapa waktu dan jarak ikut dihitung</span>
-      <p>Ikhtisar forum yang sama mencatat bahwa naiknya harga tanah, hunian, dan biaya hidup mendorong banyak pekerja pindah ke pinggiran kota. Waktu yang habis di perjalanan membuat orang sulit berkomunitas. Hunian bersama yang dekat dengan tempat kerja dan sesama anggota adalah salah satu jawabannya, jadi wilayah menjadi bagian dari penilaian kecocokan.</p>
+      <p>Ikhtisar Urban Social Forum 12 dari Kota Kita mencatat bahwa naiknya harga tanah, hunian, dan biaya hidup mendorong banyak pekerja pindah ke pinggiran kota. Waktu yang habis di perjalanan membuat orang sulit berkomunitas. Hunian bersama yang dekat dengan tempat kerja dan sesama anggota adalah salah satu jawabannya, jadi wilayah menjadi bagian dari penilaian kecocokan.</p>
     </div>
   </div>
 </section>
@@ -426,33 +411,6 @@ footer{border-top:1px solid var(--line);padding-top:22px;margin-top:30px;color:v
     <div class="field" style="max-width:380px"><label for="ptPick">Calon tetangga</label><select id="ptPick"></select></div>
     <div id="ptOut" class="cmp"></div>
   </div>
-</section>
-
-<!-- RUJUKAN -->
-<section class="view" id="v-rujukan" hidden>
-  <div class="sec-head">
-    <span class="mono">Rujukan</span>
-    <h2>Sumber isi halaman ini</h2>
-  </div>
-  <ul class="refs">
-    <li>
-      <a href="https://kotakita.org/bergumul-pada-ruang-publik-di-antara-yang-raumum" target="_blank" rel="noopener">Kota Kita: Bergumul pada Ruang Publik di antara yang 'Raumum (2 Oktober 2026)</a>
-      <span>Ikhtisar pleno pembuka Urban Social Forum 12. Dipakai untuk catatan proses empat bulan Klub Mencari Tetangga dan konteks waktu serta jarak tempuh warga kota.</span>
-    </li>
-    <li>
-      <a href="https://medium.com/ruang-kontemplasi/ketika-rumah-menjadi-barang-mewah-bagi-generasi-kita-ea4abc049c46" target="_blank" rel="noopener">Ruang Kontemplasi: Ketika Rumah Menjadi Barang Mewah bagi Generasi Kita</a>
-      <span>Dirujuk dalam deskripsi klub untuk latar belakang mahalnya hunian.</span>
-    </li>
-    <li>
-      <a href="https://www.threads.com/@permanasatriaa/post/DXqg-gtjyMo/sudah-kali-pertemuan-ikut-klub-mencari-tetangga-sebagai-periset-arsitek-klub" target="_blank" rel="noopener">Unggahan Threads @permanasatriaa</a>
-      <span>Dirujuk dalam deskripsi klub untuk pengalaman mengikuti pertemuan sebagai periset arsitek.</span>
-    </li>
-    <li>
-      <a href="https://dunia-asia.org/housing-in-asia-2-jakarta-cohousing/" target="_blank" rel="noopener">Dunia Asia: Housing in Asia 2, Jakarta Cohousing</a>
-      <span>Dirujuk dalam deskripsi klub untuk contoh co-housing, termasuk Samadya Co-housing.</span>
-    </li>
-  </ul>
-  <p class="mono" style="margin-top:18px;max-width:70ch;text-transform:none;letter-spacing:.02em">Halaman Kota Kita dibaca langsung saat menyusun aplikasi ini. Tiga rujukan lain diambil dari deskripsi klub dan belum dibuka ulang.</p>
 </section>
 
 <footer>
@@ -612,7 +570,7 @@ function copyText(text,node){
 }
 
 /* ---------- tab ---------- */
-var TABS=['beranda','cari','daftar','pertemuan','rujukan'];
+var TABS=['beranda','cari','daftar','pertemuan'];
 function show(name){
   if(TABS.indexOf(name)<0)name='beranda';
   S.tab=name;
